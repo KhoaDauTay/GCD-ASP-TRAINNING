@@ -1,0 +1,7 @@
+﻿@model IEnumerable<CRUD.Models.Course>
+@{
+    foreach (var course in Model)
+    {
+        <p>@course.Name</p>
+    }
+}
