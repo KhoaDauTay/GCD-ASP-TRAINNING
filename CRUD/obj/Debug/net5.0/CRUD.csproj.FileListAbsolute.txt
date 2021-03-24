@@ -72,3 +72,4 @@ C:\Users\Admin\source\repos\CRUD\CRUD\obj\Debug\net5.0\CRUD.pdb
 C:\Users\Admin\source\repos\CRUD\CRUD\obj\Debug\net5.0\CRUD.genruntimeconfig.cache
 C:\Users\Admin\source\repos\CRUD\CRUD\obj\Debug\net5.0\Razor\Views\Schools\Index.cshtml.g.cs
 C:\Users\Admin\source\repos\CRUD\CRUD\obj\Debug\net5.0\Razor\Views\Schools\Create.cshtml.g.cs
+C:\Users\Admin\source\repos\CRUD\CRUD\obj\Debug\net5.0\Razor\Views\Schools\Detail.cshtml.g.cs

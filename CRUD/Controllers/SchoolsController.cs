@@ -34,5 +34,11 @@ namespace CRUD.Controllers
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
+        public IActionResult Detail(int id)
+        {
+            Course course = _db.Courses.Find(id);
+            return View(course);   
+        }
     }
 }
