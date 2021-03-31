@@ -40,5 +40,18 @@ namespace CRUD.Controllers
             Course course = _db.Courses.Find(id);
             return View(course);   
         }
+        [HttpPost]
+        public IActionResult Update(Course course)
+        {
+            var courseinDb = _db.Courses.SingleOrDefault(c => c.Id == course.Id);
+            if (courseinDb == null)
+            {
+                return NotFound();
+            }
+            courseinDb.Name = course.Name;
+            _db.Courses.Update(courseinDb);
+            _db.SaveChanges();
+            return RedirectToAction("Detail", new {id=courseinDb.Id});
+        }
     }
 }

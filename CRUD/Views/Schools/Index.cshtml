@@ -2,6 +2,6 @@
 @{
     foreach (var course in Model)
     {
-        <p>@course.Name</p>
+        <a asp-action="Detail" asp-route-id="@course.Id">@course.Name</a>
     }
 }
