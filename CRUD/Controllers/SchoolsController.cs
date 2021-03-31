@@ -53,5 +53,13 @@ namespace CRUD.Controllers
             _db.SaveChanges();
             return RedirectToAction("Detail", new {id=courseinDb.Id});
         }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var courseDb = _db.Courses.Find(id);
+            _db.Courses.Remove(courseDb);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
